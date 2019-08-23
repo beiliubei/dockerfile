@@ -6,7 +6,7 @@ PASSWORD=${PASSWORD:-"123456"}
 MOUNT_POINT=${MOUNT_POINT-"/data"}
 VOL_SIZE_MB=${VOL_SIZE_MB-"512000"}
 
-while getopts "u:i:p:m:v" OPT; do
+while getopts "u:i:p:m:v:" OPT; do
     case $OPT in
         u)
             USER_NAME=$OPTARG;;
